@@ -10,13 +10,11 @@ Icon
 .Trashes
 ._*
 
-
 ############################
 # Linux
 ############################
 
 *~
-
 
 ############################
 # Windows
@@ -30,7 +28,6 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-
 
 ############################
 # Packages
@@ -60,7 +57,6 @@ $RECYCLE.BIN/
 *.out
 *.pid
 
-
 ############################
 # Logs and databases
 ############################
@@ -70,7 +66,6 @@ $RECYCLE.BIN/
 *.sql
 *.sqlite
 *.sqlite3
-
 
 ############################
 # Misc.
@@ -95,7 +90,36 @@ pids
 logs
 results
 node_modules
+node_modules/
+frontend/node_modules/
+backend/node_modules/
 .node_history
+.next
+frontend/.next
+backend/.cache
+dist
+build
+
+############################
+# Next.js
+############################
+
+.next/
+frontend/.next/
+.turbo/
+frontend/.turbo/
+
+############################
+# Environment files
+############################
+
+.env
+.env.local
+.env.production
+.env.development
+.env.staging
+.env.*.local
+.env.example
 
 ############################
 # Package managers
@@ -121,11 +145,14 @@ coverage
 # Strapi
 ############################
 
-.env
 license.txt
 exports
 .strapi
-dist
-build
 .strapi-updater.json
-.strapi-cloud.json.env
+.strapi-cloud.json
+
+############################
+# Native build artifacts
+############################
+
+**/next-swc.win32-x64-msvc.node
